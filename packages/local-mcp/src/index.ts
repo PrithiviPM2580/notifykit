@@ -6,7 +6,7 @@ import {
 } from "notifykit-core";
 
 const server = new McpServer({
-  name: "local-mcp",
+  name: "notifykit-local-mcp",
   version: "0.0.0",
 });
 
