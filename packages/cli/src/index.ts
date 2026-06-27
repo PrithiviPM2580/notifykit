@@ -14,11 +14,9 @@ const cliConfigSchema = z.object({
 
 function writeTelegramBotToken(token: string) {
   mkdirSync(dirname(configPath), { recursive: true });
-  writeFileSync(
-    configPath,
-    `${JSON.stringify({ telegramBotToken: token }, null, 2)}\n`,
-    { mode: 0o600 },
-  );
+  writeFileSync(configPath, `${JSON.stringify({ telegramBotToken: token }, null, 2)}\n`, {
+    mode: 0o600,
+  });
 }
 
 function getTelegramBotToken() {
@@ -26,9 +24,7 @@ function getTelegramBotToken() {
     throw new Error("Telegram bot token is required. Run `notifykit init`");
   }
 
-  const config = cliConfigSchema.parse(
-    JSON.parse(readFileSync(configPath, "utf-8")),
-  );
+  const config = cliConfigSchema.parse(JSON.parse(readFileSync(configPath, "utf-8")));
   const token = config.telegramBotToken;
 
   if (!token) {
@@ -38,9 +34,7 @@ function getTelegramBotToken() {
   return token;
 }
 
-program
-  .name("notifykit")
-  .description("NotifyKit CLI backend by @notifykit-core");
+program.name("notifykit").description("NotifyKit CLI backend by @notifykit-core");
 
 program
   .command("init")
