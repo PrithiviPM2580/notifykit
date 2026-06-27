@@ -14,6 +14,10 @@
     "dev:cli": "bun run packages/cli/src/index.ts",
     "dev:local-mcp": "bun run packages/local-mcp/src/index.ts",
     "dev:remote-mcp": "bun run apps/remote-mcp/src/index.ts",
+    "build:core": "bun run --filter @ppm-dev/notifykit-core build",
+    "build:cli": "bun run --filter @ppm-dev/notifykit-cli build",
+    "build:local-mcp": "bun run --filter @ppm-dev/notifykit-local-mcp build",
+    "build:remote-mcp": "bun run --filter @ppm-dev/notifykit-remote-mcp build",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
