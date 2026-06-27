@@ -12,6 +12,10 @@
     "dev:remote-mcp": "bun run apps/remote-mcp/src/index.ts"
   },
   "devDependencies": {
-    "@types/node": "^26.0.1"
+    "@types/node": "^26.0.1",
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0",
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3"
   }
 }
