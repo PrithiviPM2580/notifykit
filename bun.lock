@@ -20,9 +20,6 @@
         "hono": "^4.12.27",
         "notifykit-core": "workspace:*",
       },
-      "devDependencies": {
-        "@types/node": "^26.0.1",
-      },
     },
     "packages/cli": {
       "name": "notifykit-cli",
@@ -31,9 +28,6 @@
         "commander": "^15.0.0",
         "notifykit-core": "workspace:*",
         "zod": "^4.4.3",
-      },
-      "devDependencies": {
-        "@types/node": "^26.0.1",
       },
     },
     "packages/core": {
@@ -50,9 +44,6 @@
         "@modelcontextprotocol/sdk": "^1.29.0",
         "notifykit-core": "workspace:*",
         "zod": "^4.4.3",
-      },
-      "devDependencies": {
-        "@types/node": "^26.0.1",
       },
     },
   },
